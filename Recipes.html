@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Health Site</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+<div id="page-wrapper">
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">MySite</div>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul id="nav-menu">
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+      <li><a href="Mindfulness.html">Mindfulness</a></li>
+      <li><a href="Recipes.html">Recipes</a></li>
+      <li><a href="Workout.html">Workout</a></li>
+      <li><a href="Calculator.html">Calculator</a></li>
+    </ul>
+  </nav>
+
+  <!-- Modal -->
+  <div id="recipe-modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <button id="close-modal" class="close" aria-label="Close">&times;</button>
+      <div id="modal-text">
+        <!-- Content will be filled dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Healthy Living Starts Here</h1>
+      <p class="quote">"Let food be thy medicine and medicine be thy food."</p>
+    </div>
+  </section>
+
+  <!-- Recipes Section -->
+  <section class="recipes">
+    <h2>Healthy Recipes To Keep You Going!</h2>
+
+   <div class="controls">
+    <input type="search" id="searchInput" placeholder="Search recipes by name...">
+    <button id="clearFilters">Clear</button>
+  </div>
+
+
+    <div id="recipeGrid" class="recipe-grid">
+      <!-- Cards will load here from JSON -->
+    </div>
+    
+    <h2>More recipes will be added soon, Thank You for your patience!</h2>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="newsletter">
+      <input type="email" id="newsletterEmail" placeholder="Enter your email">
+      <button id="subscribeBtn">Subscribe</button>
+      <p id="subscribeMsg"></p>
+    </div>
+  </footer>
+</div>
+
+<!-- Scripts -->
+<script src="scripts/main.js"></script>
+</body>
+</html>
